@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./script.js"></script>
-</head>
-<body>
-    
-</body>
-</html>l
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li><img src="./sun.png" alt="" /></li>
+      </ul>
+    </nav>
+
+    <script>
+      let icons = document.querySelector(".navbar ul li img");
+      icons.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+      };
+    </script>
+  </body>
+</html>
+l
